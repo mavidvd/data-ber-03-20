@@ -55,7 +55,7 @@ D
 ### 5. From the `loans` table, what is the `loan_id` of the highest payment received?
 Result:
 ```
-6312
+6415
 ```
 
 ### 6. From the `loans` table, what is the loan `amount` of the lowest 5 `account_id`s. Show the `account_id` and the corresponding `amount`
