@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In this lab you will practice how to use the MySQL `SELECT` statement which will be extremely useful in your future work as a data analyst/scientist/engineer. **You will use the `publications` database that we used in the *Joins and Relationships* lesson.** In case you haven't had that database, [here](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/data-static/data/module-1/publications.sql.zip) is the link to download the database file.
+In this lab you will practice how to use the MySQL `SELECT` statement which will be extremely useful in your future work as a data analyst/scientist/engineer. **You will use the `publications` database that we used in the *Joins and Relationships* lesson.** In case you haven't had that database, [here](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/data-static/data/module-1/publications.sql.zip) is the link to download the database file.  If you have issues with the encoding, try first to edit the sql or text file by using find and replace all occurences of utf8mb4_0900_ai_ci with utf8mb4_unicode_ci.
 
 You will create a `solutions.sql` file in the `your-code` directory to record your solutions to all challenges.
 
