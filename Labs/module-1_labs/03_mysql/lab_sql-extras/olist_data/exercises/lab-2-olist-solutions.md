@@ -113,9 +113,6 @@ SELECT
     product_category_name,
     product_length_cm + product_height_cm + product_width_cm AS total_dimensions
 FROM olist.products
-GROUP BY
-    product_category_name,
-    total_dimensions
 ORDER BY total_dimensions DESC
 LIMIT 1;
 ```
