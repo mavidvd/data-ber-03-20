@@ -84,13 +84,13 @@ ORDER BY status;
 ### 5. From the `loans` table, what is the `loan_id` of the highest payment received?
 Result:
 ```
-6312
+6415
 ```
 Solution:
 ```sql
 SELECT loan_id 
 FROM loan
-ORDER BY payments ASC 
+ORDER BY payments DESC 
 LIMIT 1;
 ```
 
