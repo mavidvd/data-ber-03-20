@@ -127,10 +127,21 @@ SELECT
     IF(review_score = 1, 'very dissatisfied',
     IF(review_score = 2, 'moderately dissatisfied',
     IF(review_score = 3, 'neutral',
-    IF(review_score = 4, 'moderately satisfied', 'very satisfied')))) AS review_category
-FROM olist.order_reviews
-ORDER BY review_category DESC
-LIMIT 100;
+    IF(review_score = 4, 'moderately satisfied',
+    IF(review_score = 5, 'very satisfied','undefined'))))) AS review_category
+FROM olist.order_reviews;
+
+SELECT
+	review_score,
+	CASE
+		WHEN review_score = 1 THEN 'very dissatisfied'
+        WHEN review_score = 2 THEN 'moderately dissatisfied'
+        WHEN review_score = 3 THEN 'neutral'
+        WHEN review_score = 4 THEN 'moderately satisfied'
+        WHEN review_score = 5 THEN 'very satisfied'
+        ELSE 'undefined'
+	END 										AS review_category
+FROM olist.order_reviews;
 ```
 
 ### 9. From the `order_reviews` table, find the review score occurring most frequently and how many times it occurs.
