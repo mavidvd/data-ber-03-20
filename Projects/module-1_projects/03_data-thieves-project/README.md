@@ -32,7 +32,7 @@ The **mandatory** requirements that this project needs to satisfy are:
 * Your project must include data from at least 2 different data sources (APIs & web, dataset & APIs, etc.).
 * The project needs to be presented within 5 minutes to your colleagues on the day of the presentation.
 
-The **deadline** to turn in the deliverables is Sunday, January 26th at 23:59.
+The **deadline** to turn in the deliverables is Sunday, April 12 at 23:59.
 
 ## Mentoring
 The TAs will be your mentors!
@@ -71,7 +71,7 @@ Your mentors are **not** meant to:
 * Complete your analysis and presentation.
 
 **Step 5**
-* Presentation time at **9 AM** on Monday! There will be a 10-minute break during the presentations!
+* Presentation time at **14:00** on Friday! There will be a 10-minute break during the presentations!
 
 ## Necessary Deliverables
 The following deliverables should be pushed to your Github repo for this chapter.
