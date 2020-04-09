@@ -32,7 +32,9 @@ To complete this lab, follow each of the steps below.
     g. You can do the same for the death rate to see how it varies across countries that are at different stages of the outbreak.  Create a calculated field for the Death Rate in % and then use a colored map to visualize it (include labels when a country is selected.
     
     h. Now in the process of exploring the data, what question do you have?  What data is available to answer that question  what would be an appropriate visualization?  Create your visualization.
-
+    
+    i. BONUS: It would be nice to use parameters to create a drop down menu that switches between Death Rate and Recovery Rate on one map to minimize the number of visualizations we have.  Use these resources on [swapping measures using parameters](https://help.tableau.com/current/pro/desktop/en-us/parameters_swap.htm) and [using parameters to make views more interactive](https://help.tableau.com/current/pro/desktop/en-us/changing-views-using-parameters.htm) to guide you with an example.
+    
 6. Save your work to Tableau Public, ensure that your workbook is viewable, and copy the URL for the workbook into the deliverables file for this lab. It might take several minutes for this workbook to save to Tableau Public due to the number of records in the data set.
 
 ## Deliverables
