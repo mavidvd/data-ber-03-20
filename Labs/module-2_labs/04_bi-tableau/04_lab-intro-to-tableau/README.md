@@ -17,7 +17,7 @@ To complete this lab, follow each of the steps below.
 3. Import the data set from your computer into Tableau.
 4. Create new worksheets with tabular views for each of the following metrics:
     
-    a. You want a quick view of the current situation of confirmed cases, but only for top countries.  After playing with the country filter you've found that countries with more than 50,000 confirmed cases comprise the top 8.  Now you can use this filter to make a histogram with total confirmed cases(rows) for countries with more than 50,000 cases (columns) with color showing total deaths.
+    a. You want a quick view of the current situation of confirmed cases, but only for top countries.  After playing with the country filter you've found that countries with more than 50,000 confirmed cases comprise the top 9.  Now you can use this filter to make a histogram with total confirmed cases(rows) for countries with more than 50,000 cases (columns) with color showing total deaths.
     
     b. Now that you have an overview, you want a bit more information on all countries that have at least 10,000 confirmed cases.  So you plot confirmed cases (bubble size), total deaths (bubble color) and median age in a Packed Bubble Chart with labels for each country with greater than 50,000 cases.
     
