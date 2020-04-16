@@ -75,11 +75,11 @@ Use the `countries of the world.csv` dataset, create two data visualization maps
 
 - World GDP Per Capital. Choose a color palette to visualize country GDP Per Capital where deeper color indicates higher GDP Per Capital. Your dataviz should look like below:
 
-    ![World GDP Per Capital](bonus-1.png)
+    ![World GDP Per Capital](bonus-2.png)
 
 - World Population Density by Country. Choose a color palette to visualize country population density where deeper color indicates higher population density. Your dataviz should look like below:
 
-    ![World GDP Per Capital](bonus-2.png)
+    ![World Population Density by Country](bonus-1.png)
 
 Create a dashboard to display both dataviz maps and save it to Tableau Public. Ensure that your workbook is viewable, and copy the URL for the workbook into the deliverables file for this lab.
 
