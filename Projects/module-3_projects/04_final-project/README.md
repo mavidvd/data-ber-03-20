@@ -37,7 +37,7 @@ The goal of this project is to give you an opportunity to demonstrate the skills
 
 The final project is structured into 2 weeks in which you build up your deliverables progressively and iteratively. We have provided a list of data sets for you to choose from. However, you are encouraged to obtain your own data sets. Using the knowledge you have acquired and your experience working with data, you will come up with a plan for what you are going to do and then design the project around the data set you have chosen.
 
-**You can work individually or in groups of up to 4**. We'll be guiding you along the process and helping you as you go. You will be working on this project over the course of 2 weeks. The proposed progression is listed below. Use it as a guideline to keep your work structured but if you feel like you have a working flow, feel free to manage the project however you think works best.
+**You can work individually or in self organized groups of up to 4**. We'll be guiding you along the process and helping you as you go. You will be working on this project over the course of 2 weeks. The proposed progression is listed below. Use it as a guideline to keep your work structured but if you feel like you have a working flow, feel free to manage the project however you think works best.
 Remember, however, that data analysis is iterative. So from time to time you may need to step back to a previous phase and iterate. It is advised that you start with a small and reasonable scope, finish it and continuously re-iterate. 
 
 ### Phase 1 - Brain Storming and Data Preparation
@@ -54,7 +54,7 @@ Identify topics of interest and see if there is available data. Ideally, formula
 * Data visualization
 * Data transformation
 
-Start exploring and getting familiar with the available data. Try to narrow the scope of your intial questions to what may be possible to further look into or answer given the data you have or you can get in addition.
+Start exploring and getting familiar with the available data. Try to narrow the scope of your intial questions to what may be possible to further look into or answer given the data you have or can get in addition.
 
 ### Phase 3 - Data Analysis First Iteration
 
@@ -91,7 +91,7 @@ Analysis:
 
 ### Phase 1
 
-On the first day of your project, you will be planning your project, exploring datasets and generate ideas. Ideally, you come up with a game plan on what you want to accomplish in the following three days. Aim to finish a first, minimal iteration in the shortest amount of time possible so that you can quickly dig further or discard initial ideas. Make sure to book some time with one of the teaching staff to get quick feedback on feasibility of your project idea.
+On the first day of your project, you will be planning your project, exploring datasets and generating ideas. Ideally, you come up with a game plan on what you want to accomplish in the following three days. Aim to finish a first, minimal iteration in the shortest amount of time possible so that you can quickly dig further or discard initial ideas. Make sure to book some time with one of the teaching staff to get quick feedback on feasibility of your project idea.
 
 To get started, here are a few publicly available data sets:
 
@@ -159,7 +159,7 @@ Resources:
 
 ##### Web Scraping
 
-The web is a free source of unlimited data. There are Wikipedia, Google Maps, YouTube, Amazon, and countless content you can download and dig. General advise? Choose a website you know well and are conerned about. Use API instead of HTML data if you can.
+The web is a free source of unlimited data. There are Wikipedia, Google Maps, YouTube, Amazon, and countless content you can download and dig. General advise? Choose a website you know well and are concerned about. Use API instead of HTML data if you can.
 
 Resources:
 
@@ -227,13 +227,13 @@ Analysis:
 
 ## Necessary Deliverables
 
-A [Final Project Template](final-project-template.md) has been prepared for you to document and report your final project. You can use the structure in that template to prepare your report or presentation. But you are not limited to the Markdown file format in turning in your report as long as you follow the structure prescribed in the template.
+A [Final Project Template](final-project-template.md) has been prepared for you to document and report your final project. You can use the structure in that template to prepare your report or presentation. But you are not limited to the Markdown file format as long as you follow the structure prescribed in the template.
 
 The following deliverables should be pushed to your Github repo.
 
 * A (or multiple) Jupyter Notebook (.ipynb) file(s) containing all your Python code.
 * A data folder containing your original datasets and your clean datasets.
-* Your final project report/presentation created from the template.
+* Your final project presentation created from the template.
 
 ## Presentation Guideline and Criteria
 
