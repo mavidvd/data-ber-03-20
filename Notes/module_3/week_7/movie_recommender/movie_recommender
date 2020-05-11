@@ -1,0 +1,76 @@
+#!/usr/bin/env python3
+
+import re
+from fuzzywuzzy import fuzz
+import pickle
+import argparse
+
+
+def load_files():
+    with open("knn_model.pkl", "rb") as m:
+        model_knn = pickle.load(m)
+
+    with open("movie_index.pkl", "rb") as mi:
+        movie_index = pickle.load(mi)
+
+    with open("movie_list.pkl", "rb") as ml:
+        movie_list = pickle.load(ml)
+
+    with open("movie_feature.pkl", "rb") as mf:
+        movie_features = pickle.load(mf)
+
+    return model_knn, movie_index, movie_list, movie_features
+
+model_knn, movie_index, movie_list, movie_features = load_files()
+
+def print_recommendations(knn_output):
+    distances, indeces = knn_output
+    j = 0
+    for i, distance in zip(indeces.flatten(), distances.flatten()):
+        movie = movie_list.iloc[i,0]
+        if j == 0:
+            print(f"Recommendations for {movie}:")
+            print("----------------------------------\n")
+        else:
+            print(f"{j}: {movie}, with distance {round(distance,2)}")
+        j += 1
+
+def movieid_to_vector(movie_id):
+    return movie_features.loc[movie_id].values.reshape(1, -1)
+
+def find_movie_id(query):
+    matches = []
+    for title, movie_id in movie_index.items():
+        # remove the year
+        title_pattern = r"(.*)\s\(\d{4}\)$"
+        extr_title, = re.findall(title_pattern, title)
+
+        # compute ratio and remove case-sensitivity
+        ratio = fuzz.ratio(extr_title.lower(), query.lower())
+
+        # add all matches to list with ratio > 60
+        if ratio >= 60:
+            matches.append((title, movie_id, ratio))
+            
+    if len(matches) == 0:
+        print("Sorry, could not find your movie :(")
+        return
+    
+    return sorted(matches, key=lambda x: x[2], reverse=True)[0][1]
+
+def recommender(movie_title, n=5):
+    movie_id = find_movie_id(movie_title)
+    if movie_id is None:
+        return 
+    
+    recs = n + 1
+    print_recommendations(model_knn.kneighbors(movieid_to_vector(movie_id), recs))
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Give me a movie title.')
+    parser.add_argument('title', metavar='t', type=str,
+                        help='Pass a movie title')
+
+    args = parser.parse_args()
+
+    recommender(args.title)
